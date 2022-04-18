@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+          <div class="container">
+             <h1> <form class="search-form" id="search-form">
+                <div class="row">
+                  <div class="col-6">
+                    <input
+                      type="search"
+                      placeholder="Type a city.."
+                      autofocus="on"
+                      autocomplete="off"
+                      id="city-input"
+                      class="form-control shadow-sm"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="submit"
+                      value="Search"
+                      class="form-control btn btn-primary shadow-sm"
+                    />
+                  </div>
+                  <div class = "col-3">
+                    <button
+                    class = 'bin bin-success w-100'
+                    id='current-location-button'
+                    >
+                    Current </button>
+              </form>
+            </h1>
+              <h2 id="city"></h2>
+                <div id="date"></div>
+                <div id="description"></div>
+              </ul>
+                <div id="date"></div>
+              <div class="row">
+                <div class="col-6">
+                    <div class="float-left">
+                      <span class="temperature" id="temperature">19</span
+                      ><span class="units">
+                        <a href="#" id="celsius-link">°C</a> |
+                        <a href="#" id="fahrenheit-link">°F</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="weatherInfo">
+                    <div>Humidity: <span id="humidity"></span>%</div>
+                    <div>Wind: <span id="wind"></span> km/h</div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <br>
+      <br>
+    <script src="index.js"></script>
+    </div>
+  </body>
+</html>
